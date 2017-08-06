@@ -1,0 +1,3 @@
+class ThilakController < ApplicationController
+  
+end

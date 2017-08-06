@@ -1,0 +1,31 @@
+
+<h1>Registration#new</h1>
+<%= form_for(:reg,:url => {:action => 'create'}) do |f|%>
+
+Firstname
+<p><%=f.text_field(:first_name)%></p>
+<br>
+lastname
+<p><%=f.text_field(:last_name)%></p><br>
+email
+<p><%=f.text_field(:email)%></p>
+<br>
+date of birth
+<p><%=f.text_field(:date_of_birth)%></p>
+<br>
+gender
+<select>
+<option>Male</p></option>
+<option>Female</option>
+</select>
+<br>
+<br>
+
+mobilenumber
+<p><%=f.text_field(:mobilenumber)%></p>
+<br>
+<div class="form_buttons">
+<%=submit_tag("Register")%>
+</div>
+<% end %>
+</div>
